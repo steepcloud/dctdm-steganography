@@ -44,6 +44,20 @@ python DCTDM.py --stego
 # - Output filename
 ```
 
+## Testing with Standard Images
+
+This project has been tested extensively using the [USC-SIPI Image Database](https://www.imageprocessingplace.com/downloads_V3/root_downloads/image_databases/standard_test_images.zip) standard test images:
+
+```bash
+# Download standard test images
+wget https://www.imageprocessingplace.com/downloads_V3/root_downloads/image_databases/standard_test_images.zip
+unzip standard_test_images.zip -d test_images/
+
+# Test with Lena, Peppers, Baboon, etc.
+python DCTDM.py --stego
+# Input: test_images/lena512.jpg
+```
+
 ## How It Works
 
 ### 1. **DCTDM Algorithm** (DCTDM.py)
